@@ -1,5 +1,7 @@
 require_relative '../../config/application'
 require_relative '../models/task'
+require_relative '--/models/owner'
+require_relative '../models/task_owner'
 require 'byebug'
 
 # puts "Put your application code in #{File.expand_path(__FILE__)}"

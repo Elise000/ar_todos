@@ -2,6 +2,9 @@ require_relative '../../config/application'
 
 class Task < ActiveRecord::Base
 
+  has_many :task_owners
+  has_many :owners, :through => :task_owners
+
   def self.list
     self.all.each_with_index do |value, index|
       puts "#{index + 1}.   " + value.item + "----->" + "#{value.status}"

@@ -10,6 +10,7 @@ class CreateTodosSchema < ActiveRecord::Migration
       t.string   :status
       t.datetime :created_at
       t.datetime :updated_at
+
     end
 
   end
